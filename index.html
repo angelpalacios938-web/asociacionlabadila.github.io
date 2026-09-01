@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Badila - Asociación Cultural</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4efe6;
+            color: #2b2118;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #3b2415;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 19px;
+        }
+
+        nav {
+            background: #21150e;
+            text-align: center;
+            padding: 14px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e5b96b;
+        }
+
+        .hero {
+            min-height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(
+                rgba(40,25,15,0.65),
+                rgba(40,25,15,0.65)
+            );
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 800px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 65px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 35px;
+            color: #5a351d;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #6b3e20;
+            margin-bottom: 12px;
+        }
+
+        .youtube {
+            text-align: center;
+        }
+
+        .youtube a {
+            display: inline-block;
+            background: #b21f1f;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .youtube a:hover {
+            background: #8e1717;
+        }
+
+        footer {
+            background: #21150e;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .hero h2 {
+                font-size: 35px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>LA BADILA</h1>
+    <p>Asociación Cultural de Aldeacentenera</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#asociacion">La Asociación</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#teatro">Teatro</a>
+    <a href="#youtube">YouTube</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="hero" id="inicio">
+    <div class="hero-content">
+        <h2>Cultura, tradición y pueblo</h2>
+        <p>
+            Un espacio para compartir nuestra cultura,
+            nuestras tradiciones y todo lo que hacemos en
+            Aldeacentenera.
+        </p>
+    </div>
+</div>
+
+<section id="asociacion">
+    <h2>La Asociación</h2>
+
+    <div class="card">
+        <p>
+            La Badila es una asociación cultural de
+            Aldeacentenera dedicada a mantener viva la cultura,
+            las tradiciones y la participación de nuestro pueblo.
+        </p>
+
+        <br>
+
+        <p>
+            Organizamos actividades culturales, teatro,
+            encuentros y eventos para disfrutar juntos y
+            mantener vivas nuestras raíces.
+        </p>
+    </div>
+</section>
+
+<section id="actividades">
+    <h2>Nuestras actividades</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎭 Teatro</h3>
+            <p>
+                Representaciones teatrales y actividades
+                relacionadas con el mundo del teatro.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎉 Cultura y fiestas</h3>
+            <p>
+                Participamos y organizamos actividades
+                culturales y acontecimientos de nuestro pueblo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Actividades sociales</h3>
+            <p>
+                Encuentros y actividades para reunir a vecinos
+                y amigos.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="teatro">
+    <h2>Teatro</h2>
+
+    <div class="card">
+        <h3>La Tía Tula 🎭</h3>
+
+        <p>
+            El teatro es una de las grandes pasiones de
+            La Badila. Aquí iremos colocando nuestras obras,
+            fotografías, actuaciones y próximos proyectos.
+        </p>
+    </div>
+</section>
+
+<section id="youtube">
+    <h2>La Badila en YouTube</h2>
+
+    <div class="youtube">
+        <p>
+            Puedes encontrar nuestros vídeos y actividades
+            también en nuestro canal de YouTube.
+        </p>
+
+        <a href="https://www.youtube.com/@asociacionculturallaBADILAalde"
+           target="_blank">
+            ▶ Visitar nuestro canal
+        </a>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <div class="card">
+        <p>
+            ¿Quieres ponerte en contacto con La Badila?
+        </p>
+
+        <br>
+
+        <p>
+            Próximamente añadiremos aquí los datos de contacto
+            de la asociación.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Asociación Cultural La Badila</p>
+    <p>Aldeacentenera · Cáceres · Extremadura</p>
+</footer>
+
+</body>
+</html>
